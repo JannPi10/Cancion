@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+
+       var numeros = [40,23,45,3,23,56,78,34];
+       var vectores = {
+        mayor: "",
+        menor: "",
+        media: "",
+      };
+      numeros.forEach((vector) => {
+       
+        numeros.forEach((ele) => {
+
+          if (vector > ele) {
+            if (vectores.mayor) {
+              if (vectores.mayor > vector) {
+              } 
+            else {
+                vectores.mayor = vector;
+              }
+            }
+            else {
+              vectores.mayor = vector;
+            }
+          }
+          if (vector < ele) {
+            if (vectores.menor) {
+              if (vectores.menor < vector) {
+              } 
+              else {
+                vectores.menor = vector;
+              }
+            } 
+            else {
+              vectores.menor = vector;
+            }
+          }
+        });
+      });
+
+       var suma = 0;
+      numeros.forEach((numero) => { 
+        suma = suma + numero;
+       });
+        mediaTotal = suma/numeros.length;
+
+      console.log(" el numero mayor es: ", vectores.mayor + " y el numero menor: ", vectores.menor + " y su media es " +  mediaTotal);
+    </script>
+    
+</body>
+</html>

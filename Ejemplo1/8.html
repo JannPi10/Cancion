@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+
+        var numeros= new Array(); 
+
+         //se asigna un numero random a cada posicion del array
+        numeros[0]= Math.random() * 20;
+        numeros[1]= Math.random() * 20;
+        numeros[2]= Math.random() * 20;
+        numeros[3]= Math.random() * 20;
+        numeros[4]= Math.random() * 20;
+        numeros[5]= Math.random() * 20;
+        numeros[6]= Math.random() * 20;
+
+        //se convierte de punto flotante a int cada posicion del array y se imprime
+
+        numeros.forEach((num) => { 
+            num = parseInt(num);
+            console.log(num);
+       });
+
+       //se averguia cual es la mitad del arreglo y se convierte a int ya que es impar
+       // y se averigua que numero esta en esa posicion 
+
+       var tmp = parseInt(numeros.length / 2);
+       var tmp2 = parseInt(numeros[tmp]);
+       console.log("Numero " + tmp2 + " en Posicion  " + tmp);
+
+
+
+    </script>
+    
+</body>
+</html>
